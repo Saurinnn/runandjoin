@@ -70,11 +70,6 @@ class CharacterBase : MonoBehaviour
                 MemberCount++;
             }
         }
-         if(this is Player && character is Enemy)
-        {
-            var manager = Object.FindObjectOfType<RunAndJoinSceneManager>();
-            manager.JudgeGame(this, character);
-        }
     }
     
     protected virtual void Start() { }
